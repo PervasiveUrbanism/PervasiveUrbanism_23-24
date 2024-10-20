@@ -1,0 +1,341 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:creategrid_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:creategrid"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="320"/>
+        <Option type="double" name="component_pos_y" value="115"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Create grid"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="369.64464993394984"/>
+      <Option type="double" name="component_pos_y" value="161.21400264200796"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:creategrid_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Grid">
+          <Option type="QString" name="child_id" value="native:creategrid_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Grid"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="617.0290620871863"/>
+          <Option type="double" name="component_pos_y" value="233.1571994715984"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Grid"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CRS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QgsCoordinateReferenceSystem" name="static_value">
+              <spatialrefsys nativeFormat="Wkt">
+                <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],MEMBER["World Geodetic System 1984 (G2139)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Web mapping and visualisation."],AREA["World between 85.06°S and 85.06°N."],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+                <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+                <srsid>3857</srsid>
+                <srid>3857</srid>
+                <authid>EPSG:3857</authid>
+                <description>WGS 84 / Pseudo-Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="EXTENT">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="-4328.089600000,-1438.242900000,6717182.657100000,6719545.159600000 [EPSG:3857]"/>
+          </Option>
+        </Option>
+        <Option type="List" name="HOVERLAY">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="HSPACING">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridsize"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="2"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VOVERLAY">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="double" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VSPACING">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridsize"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:joinbylocationsummary_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="qgis:joinbylocationsummary"/>
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="789.6446499339498"/>
+        <Option type="double" name="component_pos_y" value="216.21400264200793"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="Join attributes by location (summary)"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="634.2708058124174"/>
+      <Option type="double" name="component_pos_y" value="362.2100396301189"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="qgis:joinbylocationsummary_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Cells">
+          <Option type="QString" name="child_id" value="qgis:joinbylocationsummary_1"/>
+          <Option type="QString" name="color" value=""/>
+          <Option type="Map" name="comment">
+            <Option type="QString" name="color" value=""/>
+            <Option type="QString" name="component_description" value=""/>
+            <Option type="double" name="component_height" value="60"/>
+            <Option type="double" name="component_pos_x" value="0"/>
+            <Option type="double" name="component_pos_y" value="0"/>
+            <Option type="double" name="component_width" value="100"/>
+            <Option type="bool" name="outputs_collapsed" value="true"/>
+            <Option type="bool" name="parameters_collapsed" value="true"/>
+          </Option>
+          <Option type="QString" name="component_description" value="Cells"/>
+          <Option type="double" name="component_height" value="30"/>
+          <Option type="double" name="component_pos_x" value="850.7120211360633"/>
+          <Option type="double" name="component_pos_y" value="482.3698811096433"/>
+          <Option type="double" name="component_width" value="200"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Cells"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+          <Option type="bool" name="outputs_collapsed" value="true"/>
+          <Option type="bool" name="parameters_collapsed" value="true"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="native:creategrid_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="datapoints"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_FIELDS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="StringList" name="static_value">
+              <Option type="QString" value="GSR"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="List" name="static_value">
+              <Option type="int" value="0"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="SUMMARIES">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="List" name="static_value">
+              <Option type="int" value="6"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="grid">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option type="QString" name="fileEncoding" value="windows-1252"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option type="bool" name="active" value="true"/>
+          <Option type="int" name="type" value="1"/>
+          <Option type="QString" name="val" value="TEMPORARY_OUTPUT"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option type="QString" name="internal_version" value="Version2"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value=""/>
+  <Option type="QString" name="model_name" value="DOTS"/>
+  <Option type="QString" name="outputGroup" value=""/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="cells">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Cells"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="qgis:joinbylocationsummary_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Cells"/>
+        <Option type="QString" name="_modelChildProvider" value="qgis"/>
+      </Option>
+      <Option type="QString" name="name" value="cells"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="datapoints">
+      <Option type="List" name="data_types">
+        <Option type="int" value="0"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="DataPoints"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="datapoints"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+    <Option type="Map" name="grid">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="Grid"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="Map" name="metadata">
+        <Option type="QString" name="_modelChildId" value="native:creategrid_1"/>
+        <Option type="QString" name="_modelChildOutputName" value="Grid"/>
+        <Option type="QString" name="_modelChildProvider" value="native"/>
+      </Option>
+      <Option type="QString" name="name" value="grid"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_append" value="false"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="gridsize">
+      <Option type="int" name="data_type" value="1"/>
+      <Option type="double" name="default" value="200"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" name="description" value="GridSize"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" name="help" value=""/>
+      <Option type="double" name="max" value="500"/>
+      <Option name="metadata"/>
+      <Option type="double" name="min" value="0"/>
+      <Option type="QString" name="name" value="gridsize"/>
+      <Option type="QString" name="parameter_type" value="number"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="datapoints">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="547"/>
+        <Option type="double" name="component_pos_y" value="15"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="datapoints"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="134.43857331572"/>
+      <Option type="double" name="component_pos_y" value="359.4649933949801"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="datapoints"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+    </Option>
+    <Option type="Map" name="gridsize">
+      <Option type="QString" name="color" value=""/>
+      <Option type="Map" name="comment">
+        <Option type="QString" name="color" value=""/>
+        <Option type="QString" name="component_description" value=""/>
+        <Option type="double" name="component_height" value="60"/>
+        <Option type="double" name="component_pos_x" value="320"/>
+        <Option type="double" name="component_pos_y" value="15"/>
+        <Option type="double" name="component_width" value="100"/>
+        <Option type="bool" name="outputs_collapsed" value="true"/>
+        <Option type="bool" name="parameters_collapsed" value="true"/>
+      </Option>
+      <Option type="QString" name="component_description" value="gridsize"/>
+      <Option type="double" name="component_height" value="30"/>
+      <Option type="double" name="component_pos_x" value="127"/>
+      <Option type="double" name="component_pos_y" value="75"/>
+      <Option type="double" name="component_width" value="200"/>
+      <Option type="QString" name="name" value="gridsize"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+    </Option>
+  </Option>
+</Option>
